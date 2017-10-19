@@ -4,10 +4,12 @@ module.exports = () => {
         titulo:{
             type: String,
             required:true
-        },
-        descricao:{
-            type:String
         }
+        ,descricao:{type:String}
+        ,dataInicio:{type: Date}
+        ,dataFim:{type:Date}
+        ,responsaveis:[]
+        ,equipe:[]
     });
     return mongoose.model("Projeto",schema);
 }

@@ -13,5 +13,5 @@ module.exports = () => {
             }
         }
     });
-    return mongoose.model("Aluno",schema);
+    return mongoose.model("Usuario",schema);
 }
